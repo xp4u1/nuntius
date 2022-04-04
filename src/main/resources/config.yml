@@ -1,0 +1,43 @@
+plugin:
+  # Titles must not contain whitespaces.
+  # Descriptions are shown as hover messages, but can be empty.
+  reasons:
+    - title: 'Cheating'
+      description:
+    - title: 'AbusiveChat'
+      description:
+    - title: 'GameplaySabotage'
+      description:
+    - title: 'UnsolicitedAdvertising'
+      description:
+  # Who should receive reports?
+  teamPermission: 'xp4u1.nuntius.team'
+  # The command is executed by the team member after clicking on the report.
+  # Parameters:
+  # - %player% (name of the reported player)
+  # - %servername% (their current server)
+  jumpCommand: '/server %servername%'
+messages:
+  prefix: '§8[§cReport§8]§r§7 '
+  help:
+    header: '§8§m-----------------------§8[§l§cReport§8]§m-----------------------'
+    footer: '§8§m-----------------------------------------------------'
+    report: '§8/§creport <player> <reason/number> §8- §7Reports a player.'
+    reportToggle: '§8/§creport toggle §8- §7Turns report notifications on and off.'
+    reasons: '§7Reasons:'
+    reason: '§7%index%. §e%reason%'
+  noPermission: '§cYou are not allowed to use this command.'
+  toggle:
+    subscribed: 'Report notifications: §asubscribed'
+    unsubscribed: 'Report notifications: §4unsubscribed'
+  error:
+    invalidPlayer: 'Cannot find this player.'
+    invalidReason: 'Invalid reason.'
+  received: 'Your report for §e%player% §7has been received.'
+  team:
+    newReport: 'New report!'
+    submitted: '§8» §7Submitted by §a%player%'
+    reported: '§8» §7Reported §c%player%'
+    reason: '§8» §7Reason: §a%reason%'
+    jumpMessage: '§8» §7Click here to jump to "%player%"'
+    jumpHoverMessage: 'You will be send to %servername%.'

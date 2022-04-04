@@ -1,0 +1,4 @@
+name: Nuntius
+version: '${project.version}'
+main: com.xp4u1.nuntius.Nuntius
+author: xp4u1
